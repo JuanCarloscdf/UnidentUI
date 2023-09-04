@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center" style="
+      background-image: url(../images/fondoColores.jpg);
+      background-size: cover;
+      min-height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    ">
+    <div class="row container-fluid d-flex justify-content-center align-items-center">
+        <div class="row d-flex container-fluid p-0 m-0 col-10 col-sm-7" style="height: 430px">
+            <img class="col-6 col-sm-5 col-md-6 m-0 p-0 h-100 img-fluid d-none d-sm-block"
+                style="border-radius: 0 0 0 3rem" src="../images/5507735.jpg" alt="" />
+            <form id="unidentForm" class="col-12 col-sm-7 col-md-6 d-flex flex-column text-white py-2 px-2 px-sm-3"
+                style="background-color: #3dbed5ce; border-radius: 0 3rem 0 0" action="">
+                <h3 class="text-center fw-bolder" style="color: #eff3f5">
+                    Registrate
+                </h3>
+                <div class="d-flex flex-column">
+                    <label class="fw-bolder" for="firstName">Nombres:</label>
+                    <input class="my-input fw-normal" style="background-color: #f3f3f3ad; color: #014d67"
+                        name="firstName" id="firstName" type="text" />
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="fw-bolder" for="lastName">Apellidos:</label>
+                    <input class="my-input fw-normal" style="background-color: #f3f3f3ad; color: #014d67"
+                        name="lastName" id="lastName" type="text" />
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="fw-bolder" for="email">Email:</label>
+                    <input class="my-input fw-normal" style="background-color: #f3f3f3ad; color: #014d67" name="email"
+                        id="email" type="text" />
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="fw-bolder" for="cellphone">Celular:</label>
+                    <input class="my-input fw-normal" style="background-color: #f3f3f3ad; color: #014d67"
+                        name="cellphone" id="cellphone" type="text" />
+                </div>
+                <div class="d-flex flex-column">
+                    <label class="fw-bolder" for="password">Password:</label>
+                    <input class="my-input fw-normal" style="background-color: #f3f3f3ad; color: #014d67"
+                        name="password" id="password" type="password" />
+                </div>
+                <div>
+                    <label class="display-9" for="agree"><input name="agree" id="agree" type="checkbox" /> Estoy de
+                        acuerdo</label>
+                </div>
+                <button class="my-button">Enviar</button>
+                <a class="my-anchor mt-3 m-0 p-0" href="./login.html">Ya tienes cuenta!</a>
+                <p class="m-0 p-0" id="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
